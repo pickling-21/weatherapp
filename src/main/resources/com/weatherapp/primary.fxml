@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.weatherapp.PrimaryController" spacing="10" style="-fx-padding: 10;">
+    
+    <HBox spacing="10">
+        <TextField fx:id="cityInput" promptText="Enter city name" style="-fx-pref-width: 200;"/>
+        <Button fx:id="searchButton" text="Search" onAction="#handleSearch"/>
+    </HBox>
+    
+    <Label fx:id="errorLabel" style="-fx-text-fill: red;"/>
+    
+    <VBox spacing="5">
+        <Label fx:id="cityLabel"/>
+        <Label fx:id="tempLabel"/>
+        <Label fx:id="humidityLabel"/>
+        <Label fx:id="windLabel"/>
+        <Label fx:id="conditionsLabel"/>
+    </VBox>
+</VBox>
