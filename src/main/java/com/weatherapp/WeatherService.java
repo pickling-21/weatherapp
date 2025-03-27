@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
 public class WeatherService {
-    private static final String API_KEY = "8712c73a7db8b8bc27ae0217fc5a25c5"; // Replace with your actual API key
+    private static final String API_KEY = "key"; // Replace with your actual API key
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     public WeatherData getWeatherData(String city) throws Exception {
